@@ -1,0 +1,58 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import "fonts";
+@import "variables";
+@import "animations";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: $color-black;
+	background: $color-black;
+	font-family: $font-family-montserrat;
+}
+
+.error {
+	font-style: normal;
+}
+
+.input-group.word-count {
+	.form-control {
+		margin-bottom: 1.4375rem;
+	}
+	.form-control.is-invalid {
+		margin-bottom: 0;
+	}
+}
+
+#wordCount {
+	bottom: 0;
+	right: 0;
+	font-size: 0.9em;
+}
+
+@include media-breakpoint-up(md) {
+	.card {
+		width: 350px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.card {
+		width: 400px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.card {
+		width: 450px;
+	}
+}

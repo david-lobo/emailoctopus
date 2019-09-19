@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gulp-SASS-Bootstrap-Boilerplate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- inject css -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-sm-center h-100">
+                <div class="col-md-6 form-wrapper">
+                    <div class="card form-card">
+                        <div class="card-header">Add Contact</div>
+                        <div class="card-body">
+                            <form id="contactForm" class="form-horizontal" method="post" action="#">
+                                <div class="form-group">
+                                    <label for="FirstName" class="xcols-sm-2 control-label">First name</label>
+                                    <div class="xcols-sm-10">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="Enter First Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="LastName" class="xcols-sm-2 control-label">Last name</label>
+                                    <div class="xcols-sm-10">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Enter Last Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email_address" class="xcols-sm-2 control-label">Email</label>
+                                    <div class="xcols-sm-10">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" name="email_address" id="email_address" placeholder="Enter Email Address" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group d-none">
+                                    <label for="notes" class="xcols-sm-2 control-label">Notes</label>
+                                    <div class="xcols-sm-10">
+                                        <div class="input-group word-count">                                            
+                                            <textarea class="form-control" name="notes" id="notes" rows="3"></textarea>
+                                            <span id="wordCount" class="position-absolute"></span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <template id="successTemplate">
+            <div class="card success-card hide">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <?xml version="1.0"?>
+                        <svg class="my-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="30%" height="30%"><g><g>
+                            <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26   S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#28A745"/>
+                            <path d="M38.252,15.336l-15.369,17.29l-9.259-7.407c-0.43-0.345-1.061-0.274-1.405,0.156c-0.345,0.432-0.275,1.061,0.156,1.406   l10,8C22.559,34.928,22.78,35,23,35c0.276,0,0.551-0.114,0.748-0.336l16-18c0.367-0.412,0.33-1.045-0.083-1.411   C39.251,14.885,38.62,14.922,38.252,15.336z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#28A745"/>
+                        </g></g> </svg>
+                        <span class="my-3 h1 font-weight-bolder">Thank you!</span>
+                        <span class="h5 text-muted">Your contact has been added</span>
+                    </div>
+                </div>
+            </div>
+        </template>
+        
+        <!-- inject js -->
+        <script src="js/bundle.js"></script>
+    </body>
+</html>
